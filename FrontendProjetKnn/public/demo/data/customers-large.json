@@ -1,0 +1,52 @@
+{
+    "data":[
+      {
+         "id": 3,
+         "name": "Analysedesentiment.csv",
+         "country": {
+           "name": "0.34"
+          
+         },
+         "company": "0.38",
+         "date": "0.245",
+         "status": "0.45"
+         
+       },
+       {
+         "id": 4,
+         "name": "Analysedesentiment.csv",
+         "country": {
+           "name": "0.35"
+          
+         },
+         "company": "0.39",
+         "date": "0.36",
+         "status": "0.50"
+         
+       },
+       {
+         "id": 5,
+         "name": "Analysedesentiment.csv",
+         "country": {
+           "name": "0.44"
+          
+         },
+         "company": "0.58",
+         "date": "0.345",
+         "status": "0.55"
+         
+       },
+       {
+         "id": 6,
+         "name": "Analysedesentiment.csv",
+         "country": {
+           "name": "0.67"
+          
+         },
+         "company": "0.67",
+         "date": "0.85",
+         "status": "0.75"
+         
+       }
+    ]
+  }
