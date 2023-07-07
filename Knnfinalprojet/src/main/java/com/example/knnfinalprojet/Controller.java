@@ -16,7 +16,7 @@ import java.util.Map;
 
 import static com.example.knnfinalprojet.FichierVersListeInstances.*;
 
-@CrossOrigin
+@CrossOrigin("*")
 @RestController
 @RequestMapping("")
 public class Controller {
@@ -91,6 +91,13 @@ public class Controller {
     @GetMapping("/getFeeling")
     public String getFeeling(@RequestParam String phrase) throws IOException {
         return AllServ.getFeeling(phrase);
+    }
+    @GetMapping("/getOrthographe")
+    public List<Instance> getCorrection(@RequestParam String phrase) throws IOException {
+        Orthographe a=new Orthographe();
+        a.generer();
+        List <Instance> list=a.Corriger(phrase);
+        return  list;
     }
 }
 

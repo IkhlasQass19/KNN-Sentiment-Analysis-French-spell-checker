@@ -15,6 +15,8 @@ const model = ref([
             { label: 'Resultat', icon: 'pi pi-fw pi-check-square', to: '/Resultat' },
             { label: 'K valeurs', icon: 'pi pi-fw pi-list', to: '/k' },
             { label: 'Analyse des sentiments', icon: 'pi pi-fw pi-circle', to: '/analyse' },
+            
+            { label: ' Correcteur d\'orthographe', icon: 'pi pi-fw pi-pencil', to: '/Orth' },
 
         ]
     }

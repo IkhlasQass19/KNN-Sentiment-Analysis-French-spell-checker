@@ -1,8 +1,10 @@
 package com.example.knnfinalprojet;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
+@JsonSerialize
 public class Instance {
     int n;
     String [] att=new String[n];
@@ -13,9 +15,10 @@ public class Instance {
 
 
     public Instance(String[] att, String classe,int nbratt) {
+
+        this.n=nbratt;
         this.att = att;
         this.classe = classe;
-        this.n=nbratt;
     }
 
 
@@ -26,7 +29,7 @@ public class Instance {
         Collections.shuffle(list);
 
         for (int i = 0; i < size; i++) {
-            test.add(list.get(i));
+          test.add(list.get(i));
         }
 
         ArrayList<Instance> train = new ArrayList<>(list.subList(size, list.size()));
@@ -99,6 +102,15 @@ public class Instance {
         lists[1]=testFold;
 
         return lists;
+    }
+
+    public String[] getAtt() {
+        return att;
+    }
+
+
+    public String getClasse() {
+        return classe;
     }
 
 }

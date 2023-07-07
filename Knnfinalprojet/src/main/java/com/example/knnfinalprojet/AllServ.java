@@ -307,4 +307,5 @@ public static ArrayList<Mesure> getMesures(int choix, int k, int nbr, int type) 
         String tst = k.PredictClasse(ChoixInstances[0], b,1);
         return tst;
     }
+
 }

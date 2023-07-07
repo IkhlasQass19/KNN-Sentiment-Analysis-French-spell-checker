@@ -64,7 +64,7 @@ const lineData = reactive({
             borderColor: '#00bb7e',
             tension: 0.4
         }
-        ,  
+        ,
         {
             label: 'Rappel',
             data: rappelArray,
@@ -72,7 +72,7 @@ const lineData = reactive({
             backgroundColor: 'yellow',
             borderColor: 'yellow',
             tension: 0.4
-        },   {
+        }, {
             label: 'F_mesure',
             data: f_mesureArray,
             fill: false,
@@ -113,18 +113,23 @@ const applyLightTheme = () => {
                     color: '#ebedef'
                 }
             }
-            
+
         }
     };
 };
 
 
 watch(
-  () => [kArray, exactitudeArray, precizionArray, rappelArray, f_mesureArray],
-  () => {
-    applyLightTheme();
-  },
-  { immediate: true }
+    () => [kArray, exactitudeArray, precizionArray, rappelArray, f_mesureArray],
+    () => {
+        applyLightTheme();
+        console.log("kArray:", kArray);
+        console.log("exactitudeArray:", exactitudeArray);
+        console.log("precizionArray:", precizionArray);
+        console.log("rappelArray:", rappelArray);
+        console.log("f_mesureArray:", f_mesureArray);
+    },
+    { immediate: true }
 );
 </script>
 

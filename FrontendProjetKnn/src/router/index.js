@@ -37,7 +37,12 @@ const router = createRouter({
                     path:'/K',
                     name: 'Kvisialiser',
                     component: () => import('@/views/Kvisialiser.vue')
-                },             
+                },      
+                {
+                    path:'/Orth',
+                    name: 'orth',
+                    component: () => import('@/views/Orth.vue')
+                }       
             ]
         },
   

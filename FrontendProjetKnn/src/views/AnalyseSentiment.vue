@@ -82,7 +82,7 @@ export default {
   padding: 20px;
   width: 1000px;
   /* Ajustez la largeur selon vos besoins */
-  height: 530px;
+  height: 568px;
   background-size: cover;
   background-position: center;
   text-align: center;
