@@ -1,5 +1,5 @@
 # KNN-Sentiment-Analysis
-The application of k-nearest neighbors classifier for any dataset (we give you statistics and all mesures) and for sentiment analysis (the input is text or voice ) using Vuejs and java  Spring boot :
+The application of k-nearest neighbors classifier for any dataset (we give you statistics and all mesures) and for sentiment analysis (the input is text or voice ) and French spell checker using Vuejs and java  Spring boot :
 
 
 Screens :
